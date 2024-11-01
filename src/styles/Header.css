@@ -1,0 +1,82 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  color: rgb(0, 0, 0);
+  font-family: Arial, sans-serif;
+}
+
+.logo {
+  width: 1.5cm;
+  height: 1.7cm;
+  margin-top: -10px;
+  margin-left: 7px;
+}
+
+.search-container {
+  display: flex; /* Affichage flex pour aligner l'icône et le champ */
+  align-items: center;
+  gap: 10px; /* Espace entre l'icône et le champ de saisie */
+}
+
+.search-icon {
+  color: #888; /* Couleur de l'icône */
+  font-size: 1.2rem; /* Ajuste la taille de l'icône */
+}
+
+.search-bar {
+  width: 250px; /* Largeur du champ de recherche */
+  border: 1px solid #ccc; /* Bordure du champ */
+  border-radius: 10px; /* Coins arrondis */
+  height: 35px; /* Hauteur du champ */
+  padding: 5px 10px; /* Padding interne pour le texte */
+  font-size: 1rem;
+  transition: border-color 0.3s; /* Transition pour effet de focus */
+}
+
+.search-bar:focus {
+  outline: none;
+  border-color: #007bff; /* Couleur de bordure au focus */
+}
+
+.profile-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #18283b;
+}
+
+.profile-icon {
+  font-size: 2rem;
+  margin-right: 8px;
+}
+
+.profile-name {
+  font-size: 1rem;
+  font-weight: bold; /* Mettre en gras le nom */
+}
+
+.profile-details {
+  position: absolute;
+  top: 120%;
+  right: 0;
+  background-color: white; /* Fond blanc pour les détails */
+  color: #18283b; /* Couleur du texte */
+  padding: 15px; /* Espacement interne */
+  border-radius: 8px; /* Coins arrondis */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Ombre douce */
+  white-space: nowrap;
+  z-index: 1;
+  transition: opacity 0.3s ease; /* Effet de transition */
+}
+
+.profile-details p {
+  margin: 5px 0;
+  line-height: 1.5; /* Hauteur de ligne pour l'espacement */
+}
+
+.profile-details p strong {
+  color: #ec971f; /* Couleur pour les étiquettes fortes */
+}
