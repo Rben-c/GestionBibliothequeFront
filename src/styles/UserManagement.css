@@ -127,3 +127,29 @@ table.table-striped.table-hover tbody tr:hover {
     width: 100%;
     margin-top: 10px;
 }
+
+
+/* Style pour le bouton Confirmer en rouge */
+.btn-primary2 {
+    background-color: #dc3545; /* Rouge vif */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary2:hover {
+    background-color: #c82333; /* Rouge plus foncé au survol */
+}
+
+.btn-primary2:active {
+    background-color: #bd2130; /* Rouge encore plus foncé lors du clic */
+}
+
+.btn-primary2:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(220, 53, 69, 0.4); /* Ombre rouge légère autour du bouton */
+}
